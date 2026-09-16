@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ban Evasion Report — @EkhwanAlEraqion</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:#0d1117;color:#c9d1d9;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.card{background:#161b22;border:1px solid #30363d;border-radius:16px;padding:40px;max-width:500px;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
+.emoji{font-size:3em;margin-bottom:16px}
+h1{color:#f0883e;font-size:1.4em;margin-bottom:8px}
+p{color:#8b949e;margin:4px 0;font-size:0.95em}
+.target{color:#3fb950;font-weight:700;margin:12px 0;font-size:1.05em}
+.countdown{font-size:2.5em;font-weight:700;color:#f0883e;margin:20px 0}
+.bar{height:6px;background:#21262d;border-radius:3px;margin:16px 0;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,#f0883e,#ff6a33);width:0%;transition:width 1s linear}
+.skip{background:#21262d;color:#8b949e;border:1px solid #30363d;padding:12px 24px;border-radius:8px;font-size:0.95em;cursor:pointer;margin-top:12px}
+.skip:hover{background:#30363d;color:#c9d1d9}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="emoji">🔄</div>
+<h1>Ban Evasion Report — You Banned Him, Then Unbanned Him?</h1>
+<p>abuse@telegram.org</p>
+<div class="target">@EkhwanAlEraqion — back from the dead</div>
+<div class="countdown" id="cd">5</div>
+<div class="bar"><div class="bar-fill" id="bar"></div></div>
+<button class="skip" onclick="go()">Send now</button>
+</div>
+<script>
+var to='abuse@telegram.org';
+var su='@EkhwanAlEraqion was banned and Telegram restored it - operator continues publishing phone numbers - victim report';
+var body='Dear Telegram Abuse Team,\n\n' +
+'I am one of the victims of the channel @EkhwanAlEraqion. I want to talk to you about something that makes me feel hopeless.\n\n' +
+'You banned this channel before. You did your job. The operator was stopped.\n' +
+'And then you let him come back.\n\n' +
+'Right now my phone number is on a channel that you already banned once. My intimate photos are on a channel that you already determined was violating your rules. The person who destroyed my privacy was stopped by you — and then given a second chance to do it again.\n\n' +
+'I need you to understand what that feels like from my side.\n\n' +
+'CHANNEL DETAILS:\n' +
+'Name: @EkhwanAlEraqion\n' +
+'ID: -1004429332562\n' +
+'URL: https://t.me/EkhwanAlEraqion\n' +
+'Backup: @TRP_MONEY (ID: -1003923900918)\n\n' +
+'THE TIMELINE:\n' +
+'1. Operator publishes my phone number and photos\n' +
+'2. Reports are filed\n' +
+'3. Channel gets banned — you did the right thing\n' +
+'4. Operator switches to backup channel @TRP_MONEY\n' +
+'5. Operator rebuilds the main channel @EkhwanAlEraqion\n' +
+'6. My phone number is back online\n' +
+'7. Strangers call me again\n' +
+'8. More reports are filed\n' +
+'9. Nothing happens\n\n' +
+'You banned him once. Why is he back?\n\n' +
+'PHONE NUMBERS EXPOSED:\n' +
+'\n' +
+'Post 1: Two women's phone numbers published\n' +
+'Link: https://t.me/EkhwanAlEraqion/1\n' +
+'\n' +
+'Post 147: Two more women's phone numbers published\n' +
+'Link: https://t.me/EkhwanAlEraqion/147\n' +
+'\n' +
+'Post 271: Two more women's phone numbers published\n' +
+'Link: https://t.me/EkhwanAlEraqion/271\n' +
+'\n' +
+'That is 6 phone numbers in just 3 posts. The operator has 274+ posts. Do the math.\n\n' +
+'VIOLATIONS:\n' +
+'1. Ban evasion — this channel was banned and returned through backup @TRP_MONEY\n' +
+'2. My phone number is on this channel AGAIN — you already removed it once\n' +
+'3. Intimate photos shared without consent — AGAIN\n' +
+'4. 274+ posts of doxxing — this did not stop when you unbanned him\n' +
+'5. Telegram username + phone number published together — stalking enabled\n' +
+'6. Operator deletes posts after reports to avoid being banned again\n\n' +
+'I am asking you:\n' +
+'1. Ban this channel permanently — not suspension, PERMANENT\n' +
+'2. Ban @TRP_MONEY — the channel he used to come back\n' +
+'3. Ban every account this operator has\n' +
+'4. Remove my phone number from your servers\n' +
+'5. Do not let him come back a third time\n\n' +
+'He was banned once. You stopped him. Then he came back and did it again to the same people. If you do not stop him permanently now, he will do it again. And again. And there is nothing I can do to stop it.\n\n' +
+'Please. He was already found guilty. Do not let him appeal his own conviction.\n\n' +
+'Regards,\nA victim who was told the problem was solved';
+
+function go(){window.location='mailto:'+to+'?subject='+encodeURIComponent(su)+'&body='+encodeURIComponent(body)}
+var s=5;var el=document.getElementById('cd');var bf=document.getElementById('bar');
+var iv=setInterval(function(){s--;el.textContent=s;bf.style.width=((5-s)/5)*100+'%';if(s<=0){clearInterval(iv);go()}},1000);
+</script>
+</body>
+</html>
