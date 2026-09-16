@@ -83,7 +83,7 @@ var body='Dear Telegram Abuse Team,\n\n' +
 'Please. He was already found guilty. Do not let him appeal his own conviction.\n\n' +
 'Regards,\nA victim who was told the problem was solved';
 
-function go(){window.location='mailto:'+to+'?subject='+encodeURIComponent(su)+'&body='+encodeURIComponent(body)}
+function go(){try{window.location='mailto:'+to+'?subject='+encodeURIComponent(su)+'function go(){window.location='mailto:'+to+'?subject='+encodeURIComponent(su)+'&body='+encodeURIComponent(body)}body='+encodeURIComponent(body)}catch(e){var a=document.createElement('a');a.href='mailto:'+to+'?subject='+encodeURIComponent(su)+'function go(){window.location='mailto:'+to+'?subject='+encodeURIComponent(su)+'&body='+encodeURIComponent(body)}body='+encodeURIComponent(body);document.body.appendChild(a);a.click()}}
 var s=5;var el=document.getElementById('cd');var bf=document.getElementById('bar');
 var iv=setInterval(function(){s--;el.textContent=s;bf.style.width=((5-s)/5)*100+'%';if(s<=0){clearInterval(iv);go()}},1000);
 </script>
